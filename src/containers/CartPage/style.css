@@ -1,0 +1,13 @@
+.info {
+  color: azure;
+}
+
+.cartCard {
+  width: calc(100% - 400px);
+  overflow: hidden;
+  margin: 24px;
+  border-radius: 10px;
+  background: #1a191c;
+  padding-bottom: 20px;
+  box-shadow: 8px -8px 12px #0a0b0c, -8px 8px 12px #282d32;
+}

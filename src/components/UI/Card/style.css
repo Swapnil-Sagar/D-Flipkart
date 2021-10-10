@@ -1,0 +1,16 @@
+.card {
+  width: 100%;
+  /* background: #fff; */
+  /* background: #f4f2f8; */
+  border-radius: 10px;
+  background: #1a191c;
+  padding-bottom: 20px;
+  box-shadow: 8px -8px 12px #0a0b0c, -8px 8px 12px #282d32;
+  /* box-shadow: rgba(0, 0, 0, 0.2) 0px 1px 1px 0px !important; */
+}
+.cardHeader {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 20px;
+  border-bottom: 1px solid #474545;
+}

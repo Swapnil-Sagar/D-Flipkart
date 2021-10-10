@@ -1,0 +1,40 @@
+.caContainer {
+  width: 250px;
+  margin: 20px;
+  padding: 20px;
+  /* background: rgba(255, 255, 255); */
+  /* border: 1px solid rgba(255, 255, 255, 0.5); */
+  box-sizing: border-box;
+  /* backdrop-filter: blur(10px); */
+  /* border-radius: 8px; */
+
+  background: #191c1f;
+  box-shadow: 8px -8px 15px #0a0b0c, -8px 8px 15px #282d32;
+  min-height: 320px;
+  border-radius: 30px;
+}
+.caImgContainer {
+  width: 240px;
+  height: 300px;
+  overflow: hidden;
+  position: relative;
+}
+.caImgContainer > img {
+  max-width: 100%;
+  max-height: 300px;
+}
+.caProductName {
+  font-size: 12px;
+  padding: 10px 0;
+}
+.caProductPrice {
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.caCard {
+  background: #f4f2f8;
+  border-radius: 8px;
+  padding: 8px;
+  margin: 8px;
+}
