@@ -1,4 +1,4 @@
-const baseUrl = "https://d-flipkart-rest-server.herokuapp.com/";
+const baseUrl = "https://d-flipkart-rest-server.herokuapp.com";
 
 export const api = `${baseUrl}/api`;
 export const generatePublicUrl = (fileName) => {
