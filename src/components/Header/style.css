@@ -145,7 +145,7 @@
 }
 
 .searchAutoComplete {
-  background-color: #e9e9ea;
+  background-color: #ffffff;
   position: absolute;
   width: 543px;
   z-index: 1;
@@ -178,10 +178,10 @@
     visibility: hidden;
     clear: both;
 
-    display: none;
+    display: none !important;
   }
   .offerSlider {
-    width: 100%;
+    width: 100% !important;
   }
 
   .breed {
@@ -202,7 +202,7 @@
   }
 
   .cartCard {
-    width: 100% !important;
+    width: 90% !important;
   }
   .orderCard {
     width: 100% !important;

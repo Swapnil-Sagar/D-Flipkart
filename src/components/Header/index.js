@@ -383,7 +383,11 @@ export default function Header(props) {
                   .map((v, i) => {
                     return (
                       <a
-                        style={{ textDecoration: "none", cursor: "pointer" }}
+                        style={{
+                          textDecoration: "none",
+                          cursor: "pointer",
+                          color: "darkslategrey",
+                        }}
                         onClick={() => setAutoComplete(v.name)}
                         href={`/${
                           v.name
