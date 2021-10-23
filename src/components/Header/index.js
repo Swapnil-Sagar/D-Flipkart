@@ -44,6 +44,10 @@ export default function Header(props) {
 
   // state cart value
 
+  useEffect(() => {
+    console.log("AAAUUTTHH", auth, user);
+  });
+
   const cart = useSelector((state) => state.cart);
 
   const userSignup = () => {
