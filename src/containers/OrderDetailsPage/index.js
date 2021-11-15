@@ -110,10 +110,10 @@ const OrderDetailsPage = (props) => {
           >
             <div className="flexRow">
               <div className="delItemImgContainer">
-                <img src={item.productId.productPictures[0].img} alt="" />
+                <img src={item.productId?.productPictures[0].img} alt="" />
               </div>
               <div style={{ width: "250px" }}>
-                <div className="delItemName">{item.productId.name}</div>
+                <div className="delItemName">{item.productId?.name}</div>
                 <Price value={item.payablePrice} />
               </div>
             </div>
