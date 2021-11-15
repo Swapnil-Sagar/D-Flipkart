@@ -50,12 +50,12 @@ const OrderPage = (props) => {
                   <img
                     className="orderImg"
                     src={generatePublicUrl(
-                      item.productId.productPictures[0].img
+                      item.productId?.productPictures[0].img
                     )}
                   />
                 </div>
                 <div className="orderRow">
-                  <p className="orderName">{item.productId.name}</p>
+                  <p className="orderName">{item.productId?.name}</p>
                   <p className="orderPrice">
                     <BiRupee />
                     {item.payablePrice}

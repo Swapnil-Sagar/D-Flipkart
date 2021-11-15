@@ -44,10 +44,6 @@ export default function Header(props) {
 
   // state cart value
 
-  useEffect(() => {
-    console.log("AAAUUTTHH", auth, user);
-  });
-
   const cart = useSelector((state) => state.cart);
 
   const userSignup = () => {
@@ -215,9 +211,6 @@ export default function Header(props) {
             </div>
             <div className="rightspace">
               <div className="loginInputContainer">
-                {auth.error && (
-                  <div style={{ color: "red", fontSize: 12 }}>{auth.error}</div>
-                )}
                 {signup && (
                   // <MaterialInput
                   //   type="text"
@@ -267,7 +260,7 @@ export default function Header(props) {
                   label="Email"
                   variant="standard"
                   value={email}
-                  onChange={(e) => setEmail(e.target.value)}
+                  onChange={handleSetEmail}
                 />
 
                 <TextField
@@ -297,6 +290,11 @@ export default function Header(props) {
                   }}
                   onClick={userLogin}
                 />
+
+                {auth.error && (
+                  <div style={{ color: "red", fontSize: 12 }}>{auth.error}</div>
+                )}
+
                 {!signup && (
                   <>
                     <p style={{ textAlign: "center" }}>OR</p>

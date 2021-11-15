@@ -8,8 +8,11 @@ export const signup = (user) => {
     const res = await axios.post(`/signup`, {
       ...user,
     });
+    console.log("SOME", res);
     if (res.status === 201) {
+      console.log("SOME 1", res);
       const { message } = res.data;
+      console.log("1 2", message);
       dispatch({
         type: authConstants.SIGNUP_SUCCESS,
         payload: {
@@ -27,12 +30,18 @@ export const signup = (user) => {
         },
       });
     } else {
+      console.log("SOME 2", res);
       if (res.status === 400) {
+        console.log("SOME 3", res);
         dispatch({
           type: authConstants.SIGNUP_FAILURE,
           payload: { error: res.data.error },
         });
       }
+      dispatch({
+        type: authConstants.SIGNUP_FAILURE,
+        payload: { error: "Something Went Wrong!!!" },
+      });
     }
   };
 };
